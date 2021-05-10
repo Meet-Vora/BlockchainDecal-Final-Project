@@ -59,6 +59,7 @@ contract MerchToken is ERC721, Ownable {
             bytes(_description).length != 0,
             "Description should not be null"
         );
+        
         require(_nameBytes.length >= NAME_MIN_LENGTH, "Title is too short");
         require(_nameBytes.length <= NAME_MAX_LENGTH, "Title is too long");
 
